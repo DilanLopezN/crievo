@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-dark: #0a0a12;
+  --color-bg-card: #12121e;
+  --color-purple-primary: #8b5cf6;
+  --color-purple-glow: #7c3aed;
+  --color-purple-dark: #4c1d95;
+  --color-purple-light: #c4b5fd;
+  --color-gray-light: #a0a0b8;
+  --color-gray-mid: #6b6b82;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-poppins);
+  background: var(--color-bg-dark);
+  color: white;
+  overflow-x: hidden;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s ease-in-out infinite alternate;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
