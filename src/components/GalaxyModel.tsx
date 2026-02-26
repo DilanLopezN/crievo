@@ -78,11 +78,12 @@ function Fallback() {
 
 export default function GalaxyModel() {
   return (
-    <div className="w-full h-[400px] md:h-[500px] lg:h-[600px]">
+    <div className="absolute inset-0 pointer-events-none">
       <Canvas
         camera={{ position: [0, 1.5, 5], fov: 45 }}
         style={{ background: "transparent" }}
         gl={{ alpha: true, antialias: true }}
+        className="pointer-events-auto"
       >
         <ambientLight intensity={0.4} />
         <directionalLight position={[5, 5, 5]} intensity={0.8} />
@@ -96,12 +97,12 @@ export default function GalaxyModel() {
 
         <OrbitControls
           enablePan={false}
-          enableZoom={true}
+          enableZoom={false}
           enableRotate={true}
-          autoRotate={false}
+          autoRotate
+          autoRotateSpeed={0.5}
           minDistance={2}
           maxDistance={10}
-          zoomSpeed={0.8}
           rotateSpeed={0.6}
         />
       </Canvas>
