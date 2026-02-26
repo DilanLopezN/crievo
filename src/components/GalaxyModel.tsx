@@ -1,28 +1,11 @@
 "use client";
 
-import { Suspense, useRef } from "react";
+import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, useGLTF, Environment } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import type { Group } from "three";
 
-function Model() {
-  const groupRef = useRef<Group>(null);
-  const { scene } = useGLTF("/galaxy.glb");
-
-  useFrame((_, delta) => {
-    if (groupRef.current) {
-      groupRef.current.rotation.y += delta * 0.15;
-    }
-  });
-
-  return (
-    <group ref={groupRef}>
-      <primitive object={scene} scale={1.5} />
-    </group>
-  );
-}
-
-function Fallback() {
+function Galaxy() {
   const meshRef = useRef<Group>(null);
 
   useFrame((_, delta) => {
@@ -90,10 +73,7 @@ export default function GalaxyModel() {
         <pointLight position={[-3, 2, 4]} intensity={0.6} color="#8b5cf6" />
         <pointLight position={[3, -2, -4]} intensity={0.4} color="#c4b5fd" />
 
-        <Suspense fallback={<Fallback />}>
-          <Model />
-          <Environment preset="night" />
-        </Suspense>
+        <Galaxy />
 
         <OrbitControls
           enablePan={false}
@@ -109,5 +89,3 @@ export default function GalaxyModel() {
     </div>
   );
 }
-
-useGLTF.preload("/galaxy.glb");

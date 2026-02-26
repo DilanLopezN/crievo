@@ -5,11 +5,11 @@ import Link from "next/link";
 import CrievoLogo from "./CrievoLogo";
 
 const links = [
-  { href: "#servicos", label: "Serviços" },
+  { href: "/#servicos", label: "Serviços" },
   { href: "/produtos", label: "Produtos" },
-  { href: "#processo", label: "Processo" },
-  { href: "#portfolio", label: "Portfólio" },
-  { href: "#contato", label: "Contato" },
+  { href: "/#processo", label: "Processo" },
+  { href: "/#portfolio", label: "Portfólio" },
+  { href: "/#contato", label: "Contato" },
 ];
 
 export default function Navbar() {
