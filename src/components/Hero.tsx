@@ -42,8 +42,8 @@ export default function Hero() {
       {/* Stars */}
       <div ref={starsRef} className="absolute inset-0 z-0 overflow-hidden" />
 
-      {/* 3D Galaxy - flows freely across the entire hero section */}
-      <div className="absolute inset-0 z-[1]">
+      {/* 3D Galaxy - smaller on mobile to not block content */}
+      <div className="absolute inset-x-0 top-0 h-[50vh] md:h-full md:inset-0 z-[1] pointer-events-none">
         <GalaxyModel />
       </div>
 

@@ -66,7 +66,6 @@ export default function GalaxyModel() {
         camera={{ position: [0, 1.5, 5], fov: 45 }}
         style={{ background: "transparent" }}
         gl={{ alpha: true, antialias: true }}
-        className="pointer-events-auto"
       >
         <ambientLight intensity={0.4} />
         <directionalLight position={[5, 5, 5]} intensity={0.8} />
@@ -78,12 +77,9 @@ export default function GalaxyModel() {
         <OrbitControls
           enablePan={false}
           enableZoom={false}
-          enableRotate={true}
+          enableRotate={false}
           autoRotate
           autoRotateSpeed={0.5}
-          minDistance={2}
-          maxDistance={10}
-          rotateSpeed={0.6}
         />
       </Canvas>
     </div>
