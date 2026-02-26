@@ -60,7 +60,9 @@ export default function Hero() {
             únicas. Com foco em performance e resultados, transformamos ideias em projetos de impacto.
           </p>
           <Link
-            href="#contato"
+            href="https://wa.me/5511944502819?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20especialista"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-9 py-3.5 bg-purple-primary text-white rounded-lg font-semibold text-[0.95rem] no-underline transition-all duration-300 hover:bg-purple-glow hover:-translate-y-0.5 shadow-[0_0_30px_rgba(139,92,246,0.3)] hover:shadow-[0_0_50px_rgba(139,92,246,0.5)]"
           >
             Falar com especialista

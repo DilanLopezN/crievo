@@ -173,7 +173,9 @@ export default function DesignPage() {
                 Ver planos e preços
               </Link>
               <Link
-                href="#contato"
+                href="https://wa.me/5511944502819?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20Design%20%26%20Marketing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block px-9 py-4 border border-purple-primary/40 text-white rounded-lg font-semibold text-base no-underline transition-all duration-300 hover:border-purple-primary hover:bg-purple-primary/10 hover:-translate-y-0.5"
               >
                 Falar com especialista
@@ -326,7 +328,7 @@ export default function DesignPage() {
           <FadeUp>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20Design%20%26%20Marketing"
+                href="https://wa.me/5511944502819?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20Design%20%26%20Marketing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-9 py-4 bg-purple-primary text-white rounded-lg font-semibold text-base no-underline transition-all duration-300 hover:bg-purple-glow hover:-translate-y-0.5 shadow-[0_0_30px_rgba(139,92,246,0.4)] hover:shadow-[0_0_50px_rgba(139,92,246,0.6)]"
