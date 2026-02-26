@@ -42,6 +42,11 @@ export default function Hero() {
       {/* Stars */}
       <div ref={starsRef} className="absolute inset-0 z-0 overflow-hidden" />
 
+      {/* 3D Galaxy - flows freely across the entire hero section */}
+      <div className="absolute inset-0 z-[1]">
+        <GalaxyModel />
+      </div>
+
       <div className="relative z-10 flex flex-col lg:flex-row items-center gap-8 lg:gap-12 w-full">
         <FadeUp className="max-w-[650px] flex-shrink-0">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-[1.1] mb-5 uppercase">
@@ -60,10 +65,6 @@ export default function Hero() {
           >
             Falar com especialista
           </Link>
-        </FadeUp>
-
-        <FadeUp variant="fade-right" className="flex-1 w-full min-w-0">
-          <GalaxyModel />
         </FadeUp>
       </div>
     </section>
