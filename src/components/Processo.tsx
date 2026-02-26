@@ -22,7 +22,7 @@ export default function Processo() {
         <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-primary to-purple-primary/10 -translate-x-1/2" />
 
         {steps.map((s, i) => (
-          <FadeUp key={i}>
+          <FadeUp key={i} variant={i % 2 === 0 ? "fade-left" : "fade-right"}>
             <div className={`flex flex-col md:flex-row items-start gap-6 md:gap-10 mb-14 relative ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
               {/* Content */}
               <div className="flex-1 md:py-4">

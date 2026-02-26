@@ -17,7 +17,7 @@ export default function Contato() {
         <p className="text-center text-gray-mid text-sm mb-15">Vamos tirar sua ideia do papel</p>
       </FadeUp>
 
-      <FadeUp className="max-w-[700px] mx-auto">
+      <FadeUp variant="scale-in" className="max-w-[700px] mx-auto">
         {/* Nome / Email */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>

@@ -32,7 +32,7 @@ export default function Portfolio() {
         <p className="text-center text-gray-mid text-sm mb-15">Alguns dos nossos projetos</p>
       </FadeUp>
 
-      <FadeUp className="max-w-[1100px] mx-auto overflow-hidden relative">
+      <FadeUp variant="scale-in" className="max-w-[1100px] mx-auto overflow-hidden relative">
         <div
           ref={trackRef}
           className="flex gap-6 transition-transform duration-500 ease-out"
